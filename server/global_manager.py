@@ -66,7 +66,7 @@ class GlobalManger(object):
         return ret
 
     def _save_msg(self, toid, msg):
-        if type(msg) == NotifyFriendsMsg:
+        if type(msg) == RetOnlineNotifyMsg:
             return
         if not self.__save_msg.get(toid):
             self.__save_msg[toid] = []
